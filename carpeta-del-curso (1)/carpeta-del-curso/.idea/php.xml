@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration standards="MySource;PEAR;PSR1;PSR12;PSR2;Squiz;Zend" tool_path="$PROJECT_DIR$/../../vvv/www/wordpress-yell/public_html/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/wimg/php-compatibility" />
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/humanmade/coding-standards" />
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/dealerdirect/phpcodesniffer-composer-installer" />
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/fig-r/psr2r-sniffer" />
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/composer" />
+      <path value="$PROJECT_DIR$/proyecto-final/vendor/wp-coding-standards/wpcs" />
+    </include_path>
+  </component>
+</project>

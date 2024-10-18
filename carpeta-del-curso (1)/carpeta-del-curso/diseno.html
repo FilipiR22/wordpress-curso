@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Desarrollo de Temas en WordPress</title>
+
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="assets/css/inicio.css">
+</head>
+<body>
+<header>
+	<div class="nav">
+		<a class="logo">DOMESTIKA</a>
+		<a href=".">Inicio</a>
+		<a href="./lecciones.html">Lecciones</a>
+		<a class="current" href="./diseno.html">Diseño del tema</a>
+	</div>
+</header>
+
+<h1 class="page-title">Diseño del Tema</h1>
+
+<div id="content">
+	<p>La carpeta del curso está dividida en:</p>
+	<div class="layout">
+		<h3>Blog</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/blog.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Archivos</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/archive.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Archivos por autor</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/author.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Comentarios</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/comments.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Post</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/post.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Página</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/page.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Búsqueda</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/search.png" alt="">
+	</div>
+	<div class="layout">
+		<h3>Dispositivos móviles</h3>
+		<div class="file-controls">
+			<p><button class="button">Mostrar/Ocultar contenido</button></p>
+		</div>
+		<img src="assets/img/mobile.png" alt="">
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		function toggle( $layout ) {
+			! $layout.hasClass( 'closed' ) ? $layout.addClass( 'closed' ) : $layout.removeClass( 'closed' )
+		}
+		$('.layout').each(function( key, layout ) {
+			toggle( $(layout) );
+		});
+
+		$( '.file-controls button' ).click( function( e ) {
+			toggle( $(e.target).parents('.layout') );
+		} );
+	});
+</script>
+<style>
+	.layout.closed img {
+		display: none;
+	}
+
+	.file-controls {
+	}
+
+	.button {
+		background-color:#44c767;
+		border:1px solid #18ab29;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-size:16px;
+		font-weight:bold;
+		padding:16px 31px;
+		text-decoration:none;
+		text-shadow:0px -1px 0px #2f6627;
+	}
+	.button:hover {
+		background-color:#5cbf2a;
+	}
+	.button:active {
+		position:relative;
+		top:1px;
+	}
+</style>
+</body>
+</html>

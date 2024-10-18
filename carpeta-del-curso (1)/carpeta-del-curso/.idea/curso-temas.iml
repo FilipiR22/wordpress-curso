@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/dealerdirect/phpcodesniffer-composer-installer" />
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/fig-r/psr2r-sniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/humanmade/coding-standards" />
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/squizlabs/php_codesniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/wimg/php-compatibility" />
+      <excludeFolder url="file://$MODULE_DIR$/proyecto-final/vendor/wp-coding-standards/wpcs" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
