@@ -30,7 +30,8 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
-define('DB_HOST', 'localhost:3306');
+define('DB_HOST', 'localhost:3307');
+// define('DB_HOST', 'localhost:3306');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8mb4');
