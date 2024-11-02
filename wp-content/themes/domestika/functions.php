@@ -64,3 +64,9 @@ function domestika_setup_widgets(){
 };
 
 add_action('widgets_init','domestika_setup_widgets');
+
+function domestika_register_menus(){
+    register_nav_menu('main-menu',__('Main menu','Domestika'));
+}
+
+add_action('after_setup_theme','domestika_register_menus');
